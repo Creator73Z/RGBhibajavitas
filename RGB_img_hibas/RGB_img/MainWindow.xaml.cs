@@ -59,7 +59,7 @@ namespace RGB_img
                         Width = CellSize,
                         Height = CellSize,
                         Fill = new SolidColorBrush(
-                            Color.FromArgb(100, Convert.ToByte(p.R), Convert.ToByte(p.G), Convert.ToByte(p.B)))
+                            Color.FromArgb(255, Convert.ToByte(p.R), Convert.ToByte(p.G), Convert.ToByte(p.B)))
 
                     };
 
@@ -73,3 +73,4 @@ namespace RGB_img
 
     }
 }
+

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,7 +33,7 @@ namespace RGB_img
         const int CellSize = 1;
         ImageMatrix image;
         string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "kep.txt");
-        string path = "kep.txt";
+        //string path = "kep.txt";
         public MainWindow()
         {
             InitializeComponent();
@@ -48,9 +48,9 @@ namespace RGB_img
             MainCanvas.Width = Columns * CellSize;
             MainCanvas.Height = Rows * CellSize;
 
-            for (int x = 0; x < Rows; x++)
+            for (int y = 0; y < Rows; y++)
             {
-                for (int y = 0; y < Columns; y++)
+                for (int x = 0; x < Columns; x++)
                 {
                     Pixel p = image.Pixels[y, x];
 

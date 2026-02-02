@@ -33,7 +33,7 @@ namespace RGB_img
         const int CellSize = 1;
         ImageMatrix image;
         string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "kep.txt");
-        //string path = "kep.txt";
+        string path = "kep.txt";
         public MainWindow()
         {
             InitializeComponent();
@@ -73,4 +73,5 @@ namespace RGB_img
 
     }
 }
+
 

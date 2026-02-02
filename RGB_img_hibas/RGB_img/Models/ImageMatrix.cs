@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,12 +24,12 @@ namespace RGB_img.Models
         {
             string[] lines = File.ReadAllLines(filePath);
 
-            if (lines.Length != Width)
+            if (lines.Length != Height)
                 throw new Exception("Hibás sorszám a fájlban.");
 
             for (int y = 0; y < Height; y++)
             {
-                string[] values = lines[y].Split(';');
+                string[] values = lines[y].Split(' ');
 
                 if (values.Length != Width * 3)
                     throw new Exception($"Hibás adatszám a(z) {y}. sorban.");
@@ -47,4 +47,3 @@ namespace RGB_img.Models
         }
     }
 }
-

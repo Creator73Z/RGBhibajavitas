@@ -22,7 +22,9 @@ namespace RGB_img
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     /// 
-   
+
+
+    
     public partial class MainWindow : Window
     {
 
@@ -71,6 +73,7 @@ namespace RGB_img
 
     }
 }
+
 
 
 

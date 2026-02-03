@@ -23,8 +23,6 @@ namespace RGB_img
     /// </summary>
     /// 
    
-
-
     public partial class MainWindow : Window
     {
 
@@ -73,5 +71,6 @@ namespace RGB_img
 
     }
 }
+
 
 
